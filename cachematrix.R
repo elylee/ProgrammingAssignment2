@@ -40,7 +40,7 @@ cacheSolve <- function(x, ...) {
     
     ## otherwise, caculates the inverse of the matrix and cache the result
     matrix <- x$get()
-    mInv <- solve(matrix)
+    mInv <- solve(matrix, ...)
     x$setMatrixInverse(mInv)
     mInv
 }
